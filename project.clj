@@ -29,8 +29,7 @@
   {:builds
    [{:id           "dev"
      :source-paths ["src/cljs"]
-     :figwheel     {:on-jsload "test-reframe.core/mount-root"}
-     :compiler     {:main                 test-reframe.core
+     :compiler     {:main                 vega-viz.core
                     :output-to            "resources/public/js/compiled/app.js"
                     :output-dir           "resources/public/js/compiled/out"
                     :asset-path           "js/compiled/out"
@@ -41,7 +40,7 @@
 
     {:id           "min"
      :source-paths ["src/cljs"]
-     :compiler     {:main            test-reframe.core
+     :compiler     {:main            vega-viz.core
                     :output-to       "resources/public/js/compiled/app.js"
                     :optimizations   :advanced
                     :closure-defines {goog.DEBUG false}

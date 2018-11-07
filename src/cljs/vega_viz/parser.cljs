@@ -19,10 +19,10 @@
     :component-will-update (fn [this [_ new-spec]]
                              (parse-vl-spec new-spec (r/dom-node this)))
     :reagent-render (fn [spec]
-                      [:div#viz])}))
+                      [:div#vega-viz])}))
 
 (defn plot
   "Renders the Hiccup style plot from a spec
-   To be used only inside Hiccup style Re-frame HTML data structure to be rendered"
+   To be used only inside Hiccup style HTML data structure to be rendered"
   [spec]
   [vega-lite spec])
