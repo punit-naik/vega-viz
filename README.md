@@ -6,13 +6,12 @@ Data visualisation library for ClojureScript using Vega-JS
 
 ```
 (ns user
-  (:require cljsjs.vega cljsjs.vega-lite cljsjs.vega-embed cljsjs.vega-tooltip
-            [viz.parser :refer [plot]]
-            [viz.core :refer [init!]]
-            [viz.data :refer [add-dataset]]
-            [viz.encoding :refer [add-axes]]
-            [viz.mark :refer [add-mark]]
-            [viz.transform :refer [stack]]))
+  (:require [vega-viz.parser :refer [plot]]
+            [vega-viz.core :refer [init!]]
+            [vega-viz.data :refer [add-dataset]]
+            [vega-viz.encoding :refer [add-axes]]
+            [vega-viz.mark :refer [add-mark]]
+            [vega-viz.transform :refer [stack]]))
 
 (def spec
   (-> (init!)
