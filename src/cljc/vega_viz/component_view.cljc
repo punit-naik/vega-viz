@@ -21,11 +21,6 @@
   [vl-spec title]
   (assoc vl-spec :title title))
 
-(defn add-name
-  "Adds a name to the Vega-lite spec"
-  [vl-spec vl-name]
-  (assoc vl-spec :title vl-name))
-
 (defn add-desc
   "Adds a description to the Vega-lite spec"
   [vl-spec desc]
