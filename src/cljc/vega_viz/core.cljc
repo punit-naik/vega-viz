@@ -108,8 +108,8 @@
                             (and (or (= chart-type "line")
                                      (= chart-type "moving-avg"))
                                  point?) (assoc :point {:filled true :size 60})))
-                (apply-filter {:field "x" :valid true})
-                (apply-filter {:field "y" :valid true}))
+                (apply-filter {:field x-fld-name :valid true})
+                (apply-filter {:field y-fld-name :valid true}))
       (and (> (count data) 1)
            (contains? #{"line" "moving-avg"} chart-type)) (add-rule-for-line chart-type stack-fld-name chart-interpolate)
       stack-info (stack {:stack-fld stack-fld-name :stack-fld-type stack-fld-type
